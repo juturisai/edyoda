@@ -1,4 +1,4 @@
-def sumlistvalues(l):
+def sumvalues(l):
     sum = 0
     for i in l:
         sum+= i
