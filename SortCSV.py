@@ -22,7 +22,7 @@ fieldid = int(input("enter field no: ")) - 1
 if input("enter 1 to reverse sort, otherwise enter: ") == '1':
     rev = True
 data.sort(key = getfield, reverse=rev)
-print(data)
+#print(data)
 with open(fname,'w') as f:
     line = ",".join(fields)
     f.write(line)
