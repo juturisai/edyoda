@@ -1,0 +1,22 @@
+1) What are common built-in data types in python?
+2) What are local variables and global variables in python?
+3) what is python operator?
+4) how is operator different from the operator?
+5) how many types of operators in python?
+6) what are functions in python?
+7) what is the function of conditional statements in python?
+8) what are the types of conditional statements?
+9) what is the difference between lists and tuples?
+10) how will you convert a string to all lower case?
+11) what is the lambda function in python?
+12) what is the difference between / and  // operator in python?
+13) write a program in python to check if a number is prime?
+14) why looping statements are used in python?
+15) which loop is not used in python?
+16) what is a looping statement?
+17) what keyword is used for looping?
+18) what function can generate a list of number s?
+19) Illustrate a basic if, elif, else structure?
+20) what does elif mean?
+21) how are if, elif, and else blocks defined?
+22) Illustrate comparing two strings for equality in a case in sensitive manner?
