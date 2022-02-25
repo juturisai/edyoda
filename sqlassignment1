@@ -1,0 +1,11 @@
+select count(*) from SalesPeople where Sname like '%a'
+
+select sp.Sname from SalesPeople as sp
+inner join Orders as o on sp.Snum = o.Snum where o.Amt > 2000
+
+select count(*) from SalesPeople where City = 'Newyork'
+
+select Sname from SalesPeople where city in ('London','Paris')
+
+select count(o.Onum), sp.Sname, o.Odate from Orders as o 
+inner join SalesPeople as sp group by sp.Sname, o.Odate
