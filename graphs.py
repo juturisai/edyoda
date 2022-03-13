@@ -178,3 +178,50 @@ addedge(adj, 3, 4)
 print(counttrees(adj, V))
 
 # Implement n-Queen’s Problem
+
+def checksafe(board, r, c):
+    for i in range(c):
+        if board[r][i] == 1:
+            return False
+
+    for i, j in zip(range(r, -1, -1), range(c, -1, -1)):
+        if board[i][j] == 1:
+            return False
+    for i, j in zip(range(r, N, 1), range(c, -1, -1)):
+        if board[i][j] == 1:
+            return False
+
+    return True
+
+
+def solveNQ(board, c):
+    if c >= N:
+        return True
+    for i in range(N):
+        if checksafe(board, i, c):
+            board[i][c] = 1
+            if solveNQ(board, c + 1):
+                return True
+            board[i][c] = 0
+    return False
+
+
+def solve(board):
+    if not solveNQ(board, 0):
+        print("Solution does not exist")
+        return False
+    return True
+
+
+N = 4
+board = []
+for i in range(N):
+    t = [0 for j in range(N)]
+    board.append(t)
+
+if solve(board):
+
+    for i in range(N):
+        for j in range(N):
+            print(board[i][j], end=" ")
+        print()
