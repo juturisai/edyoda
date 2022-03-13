@@ -99,5 +99,5 @@ print(listdata)
 
 # 5. Sort strings
 listdata = ['bunny', 'chintu', 'sai kumar', 'chotu', 'zebra', 'apple', 'banana']
-quicksort(0, len(listdata) - 1, listdata)
+mergesort(listdata)
 print(listdata)
